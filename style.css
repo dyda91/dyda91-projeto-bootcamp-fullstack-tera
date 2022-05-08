@@ -176,130 +176,6 @@ header{
 
 /*estilização do Slide*/
 
-/*#containerSlide{
-    width: 100%;    
-    height: 500px;    
-    margin-top: 100px;
-    background-color: #545454;
-}
-
-#SlideShow{
-    max-width: 1440px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-
-
-.selectSlide{
-    width: 1440px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.selectSlideButton{
-    height: 50px;
-    width: 100px;
-    border-radius:  0 0 150px 150px;
-    background-color: #545454;
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bolder;
-    border: 1px solid;
-    margin: 0 15px;
-}
-
-.textSlide{
-    width: 50%;
-    height: 500px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    justify-content: center;    
-    color: #fff;
-}
-.textSlide p{
-    font-style: italic;
-    font-size: 1.3em;
-    padding: 8px 1px;
-}
-.textSlide h1{
-    font-size: 3.3em;
-    padding: 40px 0;
-}
-.textSlide h2{
-    font-size: 2em;
-    font-weight: lighter;
-}*/
-
-
-
-/*#containerSlide{
-    width: 100%;    
-    height: 500px;    
-    margin-top: 100px;
-    background-color: #545454;
-}
-
-#SlideShow{
-    max-width: 1440px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-
-
-.selectSlide{
-    width: 1440px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.selectSlideButton{
-    height: 50px;
-    width: 100px;
-    border-radius:  0 0 150px 150px;
-    background-color: #545454;
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bolder;
-    border: 1px solid;
-    margin: 0 15px;
-}
-
-.textSlide{
-    width: 50%;
-    height: 500px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    justify-content: center;    
-    color: #fff;
-}
-.textSlide p{
-    font-style: italic;
-    font-size: 1.3em;
-    padding: 8px 1px;
-}
-.textSlide h1{
-    font-size: 3.3em;
-    padding: 40px 0;
-}
-.textSlide h2{
-    font-size: 2em;
-    font-weight: lighter;
-}*/
-
-
-
 main{
   max-width: 1440px;
   margin: 0 auto;
@@ -421,59 +297,6 @@ main{
   background-position: top left;
 }
 
-.sp-slideshow input:checked ~ .sp-content {
-  transition: background-position linear 0.6s, background-color linear 0.8s;
-}
-
-.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
-  transition: background-position linear 0.7s;
-}
-
-input.sp-selector-1:checked ~ .sp-content {
-  background-position: 0 0;
-  background-color: #222222;
-}
-
-input.sp-selector-2:checked ~ .sp-content {
-  background-position: -100px 0;
-  background-color: #222222;
-}
-
-input.sp-selector-3:checked ~ .sp-content {
-  background-position: -200px 0;
-  background-color: #222222;
-}
-
-input.sp-selector-4:checked ~ .sp-content {
-  background-position: -300px 0;
-  background-color: #222222;
-}
-
-input.sp-selector-5:checked ~ .sp-content {
-  background-position: -400px 0;
-  background-color: #222222;
-}
-
-input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
-    background-position: 0 0;
-}
- 
-input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
-    background-position: -200px 0;
-}
- 
-input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
-    background-position: -400px 0;
-}
- 
-input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {
-    background-position: -600px 0;
-}
- 
-input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
-    background-position: -800px 0;
-}
-
 .sp-slider {
   position: relative;
   left: 0;
@@ -538,15 +361,88 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 
   /*estilização do conteudo*/
 
-  #conteiner{
-       background-color: #fff;
-       margin: 10px 0;
-       border: 1px solid rgb(0,0,0,);
-       box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-       border-radius: 5px;
-       padding: 10px;
-  }
+.conteiner{
+    width: 100%;
+}
 
+.sessao{
+  max-width: 1440px;
+  background-color: #f1ebebeb;
+  position: relative;
+  margin: 25px 0;
+}
+
+.sessao h2{
+  color: #ff5757;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+.sessao p{
+  color: #f1ebebeb;
+  font-size: 30px;
+  line-height: 1.8;
+  font-weight: lighter;
+  margin: 10px 20px;
+}
+
+.frontendSection{
+  width: 50%;
+  height: 550px;
+  background-color: #222222;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  margin: 20px 0;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.frontendSection h1{
+  width: 60%;
+  height: 110px;
+  background-color: #545454;  
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  color: #ff5757;
+  font-size: 35px;
+  text-align: center;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.sessao h2{
+  color: #ff5757;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 20px;
+}
+
+
+.backendSection{
+  width: 50%;
+  height: 550px;
+  background-color: #222222;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-left: 50%;  
+  padding-top: 50px;
+  text-align: right;
+}
+
+.backendSection h1{
+  width: 60%;
+  height: 110px;
+  margin-left: 40%;
+  background-color: #545454;  
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  color: #ff5757;
+  font-size: 35px;
+  text-align: center;
+  padding: 35px;
+  box-sizing: border-box;
+}
 
 
 
