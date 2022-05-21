@@ -1,103 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Click</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav_style.css">
     <link rel="icon" href="src/imagens/logo-menor-transparente.png">
+
+    <!--========== BootStrap ==========-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+ <!--========== Inicio Barra de Menu ==========-->
     <header>
-        <div id="mainLogo">
-            <div id="circuloLogo"></div>
-            <img src="src/imagens/Logo-tranp-1Click.png" alt="">
-        </div>
-       
-        <div id="mainTopHeader">
-            <div id="topHeader">
-                <div id="campoBusca">
-                    <button id="btnBusca">Buscar</button>
-                    <input type="text" id="txtBusca">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="src/imagens/Logo-tranp-1Click.png" alt="Logotipo da empresa One Click colocado a esquerda da barra de navegação"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="src/imagens/Logo-tranp-1Click.png" alt="Logotipo da empresa One Click colocado a esquerda da barra de menu"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </div>           
-        </div>
-        <div id="mainBottomHeader">            
-            <div id="bottomHeader">   
-                <div id="acessButtons">
-                    <button id="btnAcessar"><a href="login.html">Acessar</a></button>       
-                    <img src="src/imagens/icon-acasso.png" alt="">      
-                    <button id="btnCadastrar"><a href="cadastro.html">Cadastrar</a></button>
-                </div>   
-                <nav id="linksMenus">
-                    <ul>
-                        <li><a href="index.html">Inicio <img src="src/imagens/icon-scrool.png" alt=""></a></li>
-                        <li><a href="categorias.html">Categorias <img src="src/imagens/icon-scrool.png" alt=""></a></li>
-                        <li><a href="sobre-nos.html">Sobre Nós <img src="src/imagens/icon-scrool.png" alt=""></a></li>
-                    </ul>
-                </nav>
-
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Cursos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Front-End</a></li>
+                        <li><a class="dropdown-item" href="#">Back-End</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Full-Stack</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>
+                </div>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
+<!--========== Fim Barra de Menu ==========-->
     <main>
-        <section>
-            <div class="sp-slideshow">
-  
-                <input type="radio" id="button-1" name="radio-set" class="sp-selector-1" checked="checked" />
-                <label for="button-1" class="button-label-1"></label>
-                        
-                 <input type="radio" id="button-2" name="radio-set" class="sp-selector-2" />
-                <label for="button-2" class="button-label-2"></label>
-                        
-                <input type="radio" id="button-3" name="radio-set" class="sp-selector-3" />
-                 <label for="button-3" class="button-label-3"></label>
-                        
-                 <input type="radio" id="button-4" name="radio-set" class="sp-selector-4" />
-                <label for="button-4" class="button-label-4"></label>
-                        
-                <input type="radio" id="button-5" name="radio-set" class="sp-selector-5" />
-                <label for="button-5" class="button-label-5"></label>
-                        
-                <label for="button-1" class="sp-arrow sp-a1"></label>
-                <label for="button-2" class="sp-arrow sp-a2"></label>
-                <label for="button-3" class="sp-arrow sp-a3"></label>
-                 <label for="button-4" class="sp-arrow sp-a4"></label>
-                <label for="button-5" class="sp-arrow sp-a5"></label>
-                        
-                <div class="sp-content">
-                    <ul class="sp-slider clearfix">
-                        <li><a href="categorias.html"><img src="src/imagens/imagens-slide/gif.gif" alt="" class="imgSlide"></a></li>
-                        <li><a href="categorias.html"><img src="src/imagens/imagens-slide/1.png" alt="" class="imgSlide"></a></li>
-                        <li><a href="categorias.html"><img src="src/imagens/imagens-slide/2.png" alt="" class="imgSlide"></a></li>
-                        <li><a href="categorias.html"><img src="src/imagens/imagens-slide/4.png" alt="" class="imgSlide"></a></li>
-                        <li><a href="categorias.html"><img src="src/imagens/imagens-slide/5.png" alt=""  class="imgSlide"></a></li>
-                    </ul>
+<!--========== Inicio do Carousel ==========-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-                
-        </section>
-        <section class="conteiner">
-            <div class="sessao">
-                <div class="frontendSection">
-                    <h1>Front-End</h1>
-                    <h2>Para que serve?</h2>
-                    <p>O desenvolvedor front-end é responsável pela <br> experiência do usuário dentro de uma<br> aplicação web, 
-                        é ele quem vai desenhar e<br> desenvolver as páginas com as quais,<br> posteriormente, o usuário irá interagir.</p>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/imagens/imagens-slide/1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
                 </div>
-                <div class="backendSection">
-                    <h1>Back-End</h1>
-                    <h2>Para que serve?</h2>
-                    <p>back-end é tudo aquilo que está por trás<br> da interface de uma aplicação: seus<br> sistemas, banco de dados, 
-                        toda parte de<br> segurança de dados, envio e recebimento<br> de informações, armazenamento e etc.</p>
+                <div class="carousel-item">
+                    <img src="src/imagens/imagens-slide/2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
                 </div>
-            </div>   
-        </section>
-        
-
+                <div class="carousel-item">
+                    <img src="src/imagens/imagens-slide/3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+<!--========== Fim do Carousel ==========-->
+        <article>
+            <div id="conteiner">
+                <p>O que é Lorem Ipsum?<br>
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum
+                    tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido
+                    pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu
+                    não apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo
+                    essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset
+                    contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como
+                    Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                    <br>
+                    Porque usamos isso?
+                    É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma
+                    página ao olhar para seu layout. O ponto de usar Lorem Ipsum é que ele tem uma distribuição mais ou
+                    menos normal de letras, ao contrário de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça
+                    inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam
+                    Lorem Ipsum como seu texto de modelo padrão, e uma pesquisa por 'lorem ipsum' descobrirá muitos
+                    sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às
+                    vezes de propósito (humor injetado e afins).
+                    <br>
+                    <br>
+                    De onde isso vem?<br>
+                    Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma
+                    peça da literatura latina clássica de 45 aC, com mais de 2000 anos. Richard McClintock, professor de
+                    latim no Hampden-Sydney College, na Virgínia, pesquisou uma das palavras latinas mais obscuras,
+                    consectetur, de uma passagem de Lorem Ipsum, e percorrendo as citações da palavra na literatura
+                    clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus
+                    Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 aC. Este livro é um
+                    tratado sobre a teoria da ética, <br>muito popular durante o Renascimento. A primeira linha de Lorem
+                    Ipsum, "Lorem ipsum dolor sit amet..", vem de uma linha na seção 1.10.32.
+                    <br>
+                    O pedaço padrão de Lorem Ipsum usado desde os anos 1500 é reproduzido abaixo para os interessados.
+                    As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cícero também são reproduzidas em
+                    sua forma original exata, acompanhadas de versões em inglês da tradução de 1914 de H. Rackham.
+                </p>
+            </div>
+        </article>
     </main>
+<!--========== Roda pé ==========-->
     <footer>
         <div id="rodape"></div>
     </footer>
 </body>
+
 </html>
