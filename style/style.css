@@ -70,11 +70,12 @@ main{
 
 /*========== Estilização rodapé ==========*/
 
-  footer{
-      width: 100vw;
-      height: 200px;
-      background-color: #222222;
-  }
+ footer h5{
+    color: #ff5757;
+ }
 
+ footer strong{    
+    color: #ff5757;
+ }
 
 
