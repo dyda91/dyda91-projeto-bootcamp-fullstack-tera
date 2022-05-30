@@ -1,8 +1,20 @@
 .navbar-brand img{
-    height: 60px;
+    height: 50px;
 }
 
 .offcanvas-title img{
-    height: 45px;
+    height: 45px !important;
 }
 
+.btn-outline-success {
+    color: #ff5757 !important;
+    border-color: #ff5757 !important;
+}
+
+.nav-link.active{
+    color: #ff5757 !important;
+}
+
+.nav-link{
+    color: #ff5757 !important;
+}
