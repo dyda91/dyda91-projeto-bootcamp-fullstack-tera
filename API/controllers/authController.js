@@ -32,7 +32,6 @@ class AuthController {
 
         const user = await User.findOne({email}).select("+password")
 
-        db.onClick.insert({})
 
         if (!user)
             return res.status(400).send({error: "Usuário não encontrado!"})
