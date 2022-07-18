@@ -1,7 +1,6 @@
 import User from "../models/user.js";
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
-import db from "../config/database.js";
 
 class AuthController {
 
@@ -28,7 +27,7 @@ class AuthController {
     }
 
     static auth = async (req,res)=> {
-        const { email, password} = req.body;
+        const {email, password} = req.body;
 
         const user = await User.findOne({email}).select("+password")
 
