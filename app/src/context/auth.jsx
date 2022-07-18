@@ -22,7 +22,7 @@ export const AuthProvider = ({children}) => {
   
     const login = async (email, password) => {
 
-      const  response = await createSession({email, password})
+      const  response = await createSession ({email, password});
 
       console.log("login", response.data);
 

@@ -15,7 +15,7 @@ const LoginPage = () => {
 
         console.log("submit", { email, password });
 
-        login(email, password); //integração com o contexto e API
+        login (email, password); //integração com o contexto e API
     }
 
     return (
