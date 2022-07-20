@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext} from 'react'
 import { AuthContext } from '../../context/auth';
+import imgPerfil from "../../images/perfil.jpg";
 
 import { getUsers } from '../../services/api';
 import './style.css';
@@ -35,7 +36,7 @@ export default function UserPage() {
         <nav className="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
           <div className="container-fluid">
           
-            <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Página do usuário</a>
+            <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" target="_blank">Página do usuário</a>
           
             <form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
               <div className="form-group mb-0">
@@ -43,7 +44,7 @@ export default function UserPage() {
                   <div className="input-group-prepend">
                     <span className="input-group-text"><i className="fas fa-search"></i></span>
                   </div>
-                  <input className="form-control" placeholder="Search" type="text" />
+                  <input className="form-control" placeholder="Pesquisar" type="text" />
                 </div>
               </div>
             </form>
@@ -52,7 +53,7 @@ export default function UserPage() {
                 <a className="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div className="media align-items-center">
                     <span className="avatar avatar-sm rounded-circle">
-                      <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" />
+                      <img alt="Image placeholder" src={imgPerfil} />
                     </span>
                     <div className="media-body ml-2 d-none d-lg-block">
                       <span className="mb-0 text-sm  font-weight-bold">Edjalma Almeida</span>
@@ -113,7 +114,7 @@ export default function UserPage() {
                   <div className="col-lg-3 order-lg-2">
                     <div className="card-profile-image">
                       <a href="#">
-                        <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" className="rounded-circle" />
+                        <img src={imgPerfil} className="rounded-circle" />
                       </a>
                     </div>
                   </div>
@@ -121,7 +122,7 @@ export default function UserPage() {
                 <div className="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                   <div className="d-flex justify-content-between">
                     <a href="#" className="btn btn-sm btn-info mr-4">Conectar</a>
-                    <button className="btn btn-sm btn-default float-right" onClick={handleLogout}>Logout</button>
+                    <button className="btn btn-sm btn-default float-right" onClick={handleLogout}>Sair</button>
                   </div>
                 </div>
                 <div className="card-body pt-0 pt-md-4">
