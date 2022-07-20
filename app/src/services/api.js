@@ -4,7 +4,7 @@ export const api = axios.create({
     baseURL: "http://localhost:5000",
 })
 
-export const createSession = async (email, password) => {
+export const createSession = async ({email, password}) => {
     
      return api.post("/auth/login", {email, password});
 }
