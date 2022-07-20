@@ -19,26 +19,53 @@ const LoginPage = () => {
     }
 
     return (
-
+        <>
         <div id='login'>
-            <h1>login do sistema</h1>
-            <p>{String(authenticated)}</p>
-            <form className='form' onSubmit={handleSubmit}>
-                <div className='field'>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                </div>
-
-                <div className='field'>
-                    <label htmlFor="password">Senha</label>
-                    <input type="password" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                </div>
-
-                <div className='actions'>
-                    <button type='submit'>Entrar</button>
-                </div>
-            </form>
-        </div>
+        <p>{String(authenticated)}</p>
+              <div className="second-column">
+                  <h2 className="title title-second">entrar no desenvolvedor</h2>
+              
+                  <div className="social-media">
+                      <ul className="list-social-media">
+                          <a className="link-social-media" href="#">
+                              <li className="item-social-media">
+                                  <i className="fab fa-facebook-f"></i>
+                              </li>
+                          </a>
+                          <a className="link-social-media" href="#">
+                              <li className="item-social-media">
+                                  <i className="fab fa-google-plus-g"></i>
+                              </li>
+                          </a>
+                          <a className="link-social-media" href="#">
+                              <li className="item-social-media">
+                                  <i className="fab fa-linkedin-in"></i>
+                              </li>
+                          </a>
+                      </ul>
+                  </div>
+                  <p className="description description-second">ou use sua conta de e-mail:</p>
+          
+                  <form className="form"  onSubmit={handleSubmit}>
+                  
+                      <label className="label-input" htmlFor="">
+                          <i className="far fa-envelope icon-modify"></i>
+                          <input type="email" placeholder="Email" name="email" id='email' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                      </label>
+                  
+                      <label className="label-input" htmlFor="">
+                          <i className="fas fa-lock icon-modify"></i>
+                          <input type="password" placeholder="Password" nome="senha" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                      </label>
+                  
+                      <a className="password" href="#">Esqueceu sua senha?</a>
+                      <button className="btn btn-second" type='submit'>Entrar</button>
+                  </form>
+              </div>
+         
+              </div>
+      </> 
+       
     )
 }
 

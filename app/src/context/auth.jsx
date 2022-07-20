@@ -29,7 +29,9 @@ export const AuthProvider = ({children}) => {
       //Criar session na API
 
       const loggedUser = response.data.user;
-      const token = response.data.token;        
+      const token = response.data.token; 
+      
+    
      
      
      localStorage.setItem("user", JSON.stringify(loggedUser));

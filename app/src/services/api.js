@@ -10,5 +10,5 @@ export const createSession = async ({email, password}) => {
 }
 
 export const getUsers = async () => {
-    return api.get("/todosOsUsers/:id");
+    return api.get("/users/todosOsUsers/");
 }
