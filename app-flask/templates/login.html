@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <title>Bem Vindos ao 1-Click</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="src/style/login.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/login.css') }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -17,7 +17,7 @@
           <p class="description description-primary">Para se manter conectado conosco</p>
           <p class="description description-primary">por favor faça o login com suas informações pessoais</p>
           <button id="signin" class="btn btn-primary">Entrar</button>
-          <h3><a href="index.html">Home...</a></h3> 
+          <h3><a href="/home">Home...</a></h3> 
       </div>  
       <!-- Segunda Coluna -->
       <div class="second-column">
@@ -75,7 +75,7 @@
           <p class="description description-primary">Insira seus dados pessoais</p>
           <p class="description description-primary">e comece sua jornada conosco</p>
           <button id="signup" class="btn btn-primary">Cadastro</button>
-          <h3><a href="index.html">Home...</a></h3> 
+          <h3><a href="/home">Home...</a></h3> 
       </div>
       <!-- Segunda Coluna -->
       <div class="second-column">
@@ -120,5 +120,5 @@
       </div>
   </div>
 </div>
-<script src="src/JS/login.js"></script>
+<script src="../static/JS/login.js"></script>
 </body>

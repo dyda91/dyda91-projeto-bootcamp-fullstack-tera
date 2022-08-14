@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta data-n-head="ssr" data-hid="description" name="description" content="Aprenda front-end, back-end e cloud em uma inovadora plataforma de ensino">
     <title>One Click - Cursos</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/nav_style.css">
-    <link rel="icon" href="src/imagens/logo-menor-transparente.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/cursos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/nav_style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='imagens/logo-menor-transparente.png') }}">
 
     <!--========== BootStrap ==========-->
 
@@ -27,6 +27,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 
 
     <!--========== Font Awesome icones ==========-->
@@ -39,7 +41,7 @@
    <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="src/imagens/imagens-logo/Logo-tranp-1Click.png" alt="Logotipo da empresa One Click colocado a esquerda da barra de navegação"></a>
+          <a class="navbar-brand" href="/home"><img src="..//static/imagens/Logo-tranp-1Click.png" alt="Logotipo da empresa One Click colocado a esquerda da barra de navegação"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="humburger">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,7 +53,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="cursos.html">Cursos</a>
@@ -80,165 +82,112 @@
       </nav>
 </header>
 <!--========== Fim Barra de Menu ==========-->
-    <main>
-       <h1>Cursos</h1>
-       <section>
-        <div class="album py-5 bg-light">
-            <div class="container">
-        
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/HTML.png" alt="imagem ilustrativa do html 5">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/css3.jpg" alt="imagem ilustrativa css3">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/javascript.png" alt="imagem ilustrativa javascript">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/bootstrap.jpg" alt="imagem ilustrativa bootstrap">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/jquary.gif" alt="imagem ilustrativa jquary">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                   <img src="src/imagens/imagens-cursos/react.jpg" alt="imagem ilustrativa react">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/nodejs.png" alt="imagem ilustrativa node js">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/mongodb.png" alt="imagem ilustrativa mongodb">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="src/imagens/imagens-cursos/aws.webp" alt="imagem ilustrativa aws">
-        
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!--========== Cards de curso=============-->
+<main>
+  <section class="cursosCards container marketing">
+
+      <figure class="snip1418"><img src="https://ayltoninacio.com.br/img/p/32w750.jpg" alt="sample85"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>HTML + CSS  </h3>
+          <p class="textarea">Desenvolva interfaces elaboradas em programação Front-End a partir das principais funcionalidades de HTML e CSS.</p>
+          <div class="hours">
+            20 horas
           </div>
-        </section>       
+        </figcaption><a href="#"></a>
+      </figure>
+      
+      <figure class="snip1418 hover"><img src="https://www.ateamsoftsolutions.com/wp-content/uploads/2020/02/javascript-logo.jpg" alt="sample96"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>Javascript</h3>
+          <p class="textarea">Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprender mais sobre a versão padronizada do JS. </p>
+          <div class="hours">
+            40 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
     
-    </main>
+
+      <figure class="snip1418"><img src="https://miro.medium.com/max/500/1*Mmuvv0ITyhR0LnBTGoPb5A.jpeg" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>jquery</h3>
+          <p class="textarea">Aprenda absolutamente tudo de jQuery, do início ao profissional. Inclusive como criar seus próprios plugins avançados! </p>
+          <div class="hours">
+            20 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+    
+      <figure class="snip1418"><img src="https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>Bootstrap</h3>
+          <p  class="textarea">Aprenda Bootstrap 5 criando projetos incríveis e responsivos (mobile first), desde o absoluto zero até a finalização.</p>
+          <div class="hours">
+            20 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+      <figure class="snip1418"><img src="https://www.opus-software.com.br/wp-content/uploads/2018/09/nodejs.jpg" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>Node.js</h3>
+          <p  class="textarea">Você vai desenvolver a sua aplicação web e API usando Node.JS e a linguagem mais popular, o JavaScript.</p>
+          <div class="hours">
+            60 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+      <figure class="snip1418"><img src="https://www.ambientelivre.com.br/media/k2/items/cache/e9432fccf28a953514f077b86e5e657a_L.jpg" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>Mongodb</h3>
+          <p  class="textarea">Domine o desenvolvimento em MongoDB para Web e Mobile. O guia definitivo do banco de dados não-relacional.</p>
+          <div class="hours">
+            40 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+      <figure class="snip1418"><img src="https://miro.medium.com/max/640/1*XaGxIa_JuHc8YTR5Znv6tg.png" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>React</h3>
+          <p  class="textarea">Aprenda como utilizar o framework React pronto para produção nas suas aplicações</p>
+          <div class="hours">
+            80 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+      <figure class="snip1418"><img src="https://www.comoinstalar.com.br/wp-content/uploads/2022/04/Python-Emblema.jpg" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>Python</h3>
+          <p  class="textarea">Você vai criar programas usando a última versão do Python e vai se preparar para usá-lo na web com frameworks como Django e Flask.</p>
+          <div class="hours">
+            100 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+      <figure class="snip1418"><img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="sample92"/>
+        <div class="add-to-cart"> <i class="ion-android-add"></i><span>Ver mais</span></div>
+        <figcaption>
+          <h3>AWS</h3>
+          <p  class="textarea">Trabalhe com os principais serviços de computação na nuvem da Amazon.</p>
+          <div class="hours">
+            60 horas
+          </div>
+        </figcaption><a href="#"></a>
+      </figure>
+
+  </section> 
+</main>
 <!--========== Rodapé ==========-->
 
 <footer class="bg-dark text-white pt-5 pb-4">
@@ -387,5 +336,14 @@
     </footer>
     
     <!--========== Fim do Rodapé ==========-->
+
+<script>
+   $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+
+</script>
 </body>
 </html>
