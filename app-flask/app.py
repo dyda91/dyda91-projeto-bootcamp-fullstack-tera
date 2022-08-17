@@ -53,7 +53,7 @@ def create_users():
         return gera_response(201, "usuario", users.to_json(), "Criado com Sucesso")
     except Exception as e:
         print('Erro', e)
-        return gera_response(400, "usuario", {}, "Erro ao cadastrar")
+        return gera_response(500, "usuario", {}, "Erro ao cadastrar")
 
 # -------------------- READ --------------------
 @app.route("/users", methods=['GET'])
