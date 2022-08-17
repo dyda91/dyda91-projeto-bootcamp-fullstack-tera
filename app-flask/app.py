@@ -20,9 +20,9 @@ class Users(db.Model):
     email = db.Column(db.String(40))
     password = db.Column(db.String(40))
     conf_password = db.Column(db.String(40))
-
+    
     def to_json(self):
-        return {
+            return {
             'id': self.id,
             'nome': self.nome,
             'cpf': self.cpf,
