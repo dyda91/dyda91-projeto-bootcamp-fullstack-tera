@@ -65,7 +65,7 @@ def select_users():
 
 
 @app.route("/users/<id>", methods=["GET"])
-def select_users(id):
+def select_users1(id):
     users_objects = Users.query.filter_by(id=id).first()
     users_json = users_objects.to_json()
 
@@ -142,5 +142,5 @@ def login():
     return render_template("login.html")
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
