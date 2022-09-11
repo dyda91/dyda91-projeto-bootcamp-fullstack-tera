@@ -1,7 +1,6 @@
 # -------------------- IMPORT --------------------
 from flask import Flask, Response, request, render_template
 from flask_sqlalchemy import SQLAlchemy
-import mysql.connector
 import json
 
 app = Flask(__name__)
@@ -119,11 +118,6 @@ def gera_response(status, content_name, content, message=False):
     if (message):
         body["mensagem"] = message
     return Response(json.dumps(body), status=status, mimetype="application/json")
-
-
-@app.route("/")
-def root():
-    return "<h1>API OnClick</h1>"
 
 
 @app.route("/home")

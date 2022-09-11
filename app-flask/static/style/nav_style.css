@@ -1,5 +1,5 @@
 .navbar-brand img{
-    height: 50px !important;
+    max-height: 50px !important;
 }
 
 .offcanvas-title img{
@@ -27,3 +27,4 @@
     background-color: #dc3545 !important;
     border-color: #ff5757 !important;
 }
+
