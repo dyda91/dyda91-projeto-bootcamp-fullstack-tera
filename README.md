@@ -8,4 +8,4 @@ API em Python para projeto ONE CLICK!!!
 
 Projeto iniciado com React.js e node.js, depois refeito em python com flask
 
-Trata sem de um prototipo de uma plataforma de encino, com sistema de cadastro, login, session, area de usuario, cadastro de cursos, tela de cursos com progressão etc..
+Trata sem de um prototipo de uma plataforma educacional, com sistema de cadastro, login, session, area de usuario, cadastro de cursos, tela de cursos com progressão etc..
